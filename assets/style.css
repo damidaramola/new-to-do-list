@@ -1,9 +1,9 @@
 /* Variables */
 :root {
 	--primary: #40c2ea;
-	--light: #f1c0ed;
+	--light: #f1cfee;
 	--grey: #888;
-	--dark: #313154;
+	--dark: #0c0c5d;
 	--danger: #ff5b57;
 
 	--shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -24,3 +24,14 @@
 	cursor: initial;
 }
 
+body {
+	background: var(--light);
+	color: var(--dark);
+}
+
+section {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
