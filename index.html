@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
     <link rel="stylesheet" href="assets/style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <main class="container">
-        
+      <section class="intro">
+        <h2 class="title">
+          Hello, <input type="text" id="username" placeholder="add name" />
+        </h2>
+      </section>
+      <section class="new-todo">
+        <h3> Add Todo</h3>
+        <form id="new-form">
+            <h4>
+                What is on your list today?
+            </h4>
+        </form>
+      </section>
     </main>
     <script src="/assets/main.js"></script>
-</body>
+  </body>
 </html>
