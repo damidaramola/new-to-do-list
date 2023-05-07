@@ -35,3 +35,44 @@ section {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 }
+
+h3 {
+	color: var(--dark);
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+h4 {
+	font-size: 0.875rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.intro .tile{
+    display:flex;
+}
+
+.intro .title input {
+    margin-left: 0.5rem;
+	flex: 1 1 0%;
+	min-width: 0;
+}
+
+.intro .title,
+.intro .title input {
+	color: var(--dark);
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.new-todo input[type=text]{
+    display: block;
+	width: 100%;
+	font-size: 1.125rem;
+	padding: 1rem 1.5rem;
+	color: var(--dark);
+	background-color: #FFF;
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow);
+	margin-bottom: 1.5rem;
+}
