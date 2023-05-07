@@ -89,7 +89,7 @@ input[type="checkbox"] {
     padding: 1.5rem;
 }
 
-.bubble {
+.radio-button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -98,4 +98,22 @@ input[type="checkbox"] {
 	border-radius: 999px;
 	border: 2px solid var(--dark);
 	box-shadow: var(--dark);
+}
+
+.radio-button::after {
+	content: '';
+	display: block;
+	opacity: 0;
+	width: 0px;
+	height: 0px;
+	background-color: var(--dark);
+	box-shadow: var(--dark);
+	border-radius: 999px;
+	transition: 0.2s ease-in-out;
+}
+
+input:checked ~ .radio-button::after {
+	width: 10px;
+	height: 10px;
+	opacity: 1;
 }
