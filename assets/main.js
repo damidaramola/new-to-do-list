@@ -12,4 +12,14 @@ window.addEventListener('load', ()=>{
 
     });
 
+    form.addEventListener('submit',e => {
+    e.preventDefault();
+    })
+    
+    const todoList ={
+      content: e.target.elements.content.value,
+      done:false,
+    }
+
+    
 });
