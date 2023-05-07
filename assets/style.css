@@ -1,10 +1,10 @@
 /* Variables */
 :root {
 	--primary: #40c2ea;
-	--light: #f1cfee;
+	--light: #f7e4f5;
 	--grey: #888;
 	--dark: #0c0c5d;
-	--danger: #ff5b57;
+	--danger: #ed8d8c;
 
 	--shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -67,7 +67,7 @@ h4 {
 
 .new-todo input[type=text]{
     display: block;
-	width: 50%;
+	width: 100%;
 	font-size: 1.125rem;
 	padding: 1rem 1.5rem;
 	color: var(--dark);
@@ -120,7 +120,7 @@ input:checked ~ .radio-button::after {
 
 .new-todo  input[type="submit"] {
 	display: block;
-	width: 50%;
+	width: 100%;
 	font-size: 1.125rem;
 	padding: 1rem 1.5rem;
 	color: #FFF;
@@ -135,4 +135,24 @@ input:checked ~ .radio-button::after {
 
 .new-todo input[type="submit"]:hover {
 	opacity: 0.75;
+}
+
+.todo-list .my-list{
+    margin: 1rem 0;  
+}
+
+.todo-list .todo-item{
+    display: flex;
+	align-items: center;
+	background-color: #FFF;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow);
+	margin-bottom: 1rem;
+}
+
+.todo-item label {
+	display: block;
+	margin-right: 1rem;
+	cursor: pointer;
 }
