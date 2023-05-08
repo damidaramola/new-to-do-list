@@ -69,7 +69,21 @@ function ShowTodos(){
 		todoItem.appendChild(actions);
 
 		newTodos.appendChild(todoItem);
-
         
+        if (todo.done){
+            todoItem.classList.add('done');
+        }
+        input.addEventListener('change',e =>{
+            todo.done = e.target.checked;
+            localStorage.setItem('todos', JSON.stringify(todos));
+
+            if(todo.done){
+                todoItem.classList.add('done');     
+            } else {
+                todoItem.classList.remove('done');
+            }
+
+            ShowTodos();
+        });
     });
-}
+};
