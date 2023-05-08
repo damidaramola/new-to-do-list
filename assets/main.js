@@ -1,3 +1,8 @@
+const username = document.getElementById("username");
+const usernameDisplay = document.getElementById("username-display");
+const container = document.querySelector(".container")
+const homeContainer = document.querySelector(".home-container")
+
 window.addEventListener("load", () => {
   todos = JSON.parse(localStorage.getItem("todos")) || [];
   const nameInput = document.querySelector("#username");
@@ -6,6 +11,8 @@ window.addEventListener("load", () => {
   const username = localStorage.getItem("username") || "";
 
   nameInput.value = username;
+
+  
 
   nameInput.addEventListener("change", (e) => {
     localStorage.setItem("username", e.target.value);
@@ -17,9 +24,13 @@ window.addEventListener("load", () => {
       content: e.target.elements.content.value,
       done: false,
     };
-
+    if (validation(todoList.content)){
     todos.push(todoList);
     localStorage.setItem("todos", JSON.stringify(todos));
+    }
+    else{
+           
+    }
     e.target.reset();
 
     ShowTodos();
@@ -103,3 +114,41 @@ function ShowTodos() {
     })
   });
 }
+
+const usernameForm = document.getElementById("username-form")
+
+
+usernameForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    startGame();
+})
+
+function startGame(){
+
+   // if(username.value.trim() !=""){
+    if(validation(username.value)){
+        container.style.display = "block"
+        homeContainer.style.display = "none"
+        usernameDisplay.innerText = username.value
+    }
+  //  }
+}
+
+
+function validation(val) {
+    if (val.trim() == "") {
+        swal("Error!", "Enter a value!", "error");
+        //str.name.focus();
+        return false;
+    }else{
+        return true
+    }
+}
+
+const goBack = document.getElementById("go-back")
+
+goBack.addEventListener("click", function(){
+    container.style.display = "none"
+    homeContainer.style.display = "block"
+    usernameDisplay.innerText = ""
+})

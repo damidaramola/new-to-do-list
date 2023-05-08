@@ -1,9 +1,9 @@
 /* Variables */
 :root {
-	--primary: #005b76;
+	--primary: #600076;
 	--light: #f7e4f5;
 	--grey: #888;
-	--dark: #0c0c5d;
+	--dark: #0b0b0b;
 	--danger: #e93e3b;
 
 	--shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -70,7 +70,7 @@ h4 {
 	width: 100%;
 	font-size: 1.125rem;
 	padding: 1rem 1.5rem;
-	color: var(--dark);
+	color: var(--primary);
 	background-color: #FFF;
 	border-radius: 0.5rem;
 	box-shadow: var(--shadow);
@@ -96,7 +96,7 @@ input[type="checkbox"] {
 	width: 20px;
 	height: 20px;
 	border-radius: 999px;
-	border: 2px solid var(--dark);
+	border: 2px solid var(--primary);
 	box-shadow: var(--dark);
 }
 
@@ -106,8 +106,8 @@ input[type="checkbox"] {
 	opacity: 0;
 	width: 0px;
 	height: 0px;
-	background-color: var(--dark);
-	box-shadow: var(--dark);
+	background-color: var(--primary);
+	box-shadow: var(--primary);
 	border-radius: 999px;
 	transition: 0.2s ease-in-out;
 }
@@ -126,7 +126,7 @@ input:checked ~ .radio-button::after {
 	color: #FFF;
 	font-weight: 700;
 	text-transform: uppercase;
-	background-color: var(--dark);
+	background-color: var(--primary);
 	box-shadow: var(--dark);
 	border-radius: 0.5rem;
 	cursor: pointer;
@@ -185,7 +185,7 @@ input:checked ~ .radio-button::after {
 
 .todo-item .actions .edit {
 	margin-right: 0.5rem;
-	background-color: var(--dark);
+	background-color: var(--primary);
 }
 
 .todo-item .actions .delete {
@@ -195,4 +195,9 @@ input:checked ~ .radio-button::after {
 .todo-item.done .list-content input {
 	text-decoration: line-through;
 	color: var(--grey);
+}
+
+
+.container{
+	display: none;
 }

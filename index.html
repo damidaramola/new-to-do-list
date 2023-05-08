@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
     <main class="container">
       <section class="intro">
         <h2 class="title">
-          Hello, <input type="text" id="username" placeholder="add name" />
+          Hello, <p id="username-display"></p>
         </h2>
       </section>
       <section class="new-todo">
         <h3> Todo List</h3>
-        <form id="new-form">
+        <form method="GET" id="new-form">
             <h4>
                 What is on your list today?
             </h4>
@@ -45,7 +46,15 @@
         </div> -->
         <!-- keep -->
        </div>
+       <button id="go-back">Go back</button>
       </section>
+    </main>
+    <main class="home-container">
+
+       <form id="username-form">
+        <input type="text" name="username" id="username">
+        <button>Submit</button>
+       </form>
     </main>
     <script src="/assets/main.js"></script>
   </body>
