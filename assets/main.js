@@ -31,7 +31,7 @@ ShowTodos();
 });
 
 function ShowTodos(){
-    const newTodos = documenr.querySelector('#list');
+    const newTodos = document.querySelector('#list');
     newTodos.innerHTML ='';
 
     todos.forEach(todo => {
@@ -50,5 +50,12 @@ function ShowTodos(){
 		input.type = 'checkbox';
 		input.checked = todo.done;
 		span.classList.add('radio-button');
-    })
+
+        content.classList.add('list-content');
+		actions.classList.add('actions');
+		editButton.classList.add('edit');
+		deleteButton.classList.add('delete');
+
+
+    });
 }
