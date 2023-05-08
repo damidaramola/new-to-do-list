@@ -1,7 +1,7 @@
 window.addEventListener('load', ()=>{
     todos = JSON.parse(localStorage.getItem('todos')) || [];
     const nameInput = document.querySelector('#username');
-    const  form = document.querySelector('#list');
+    const  form = document.querySelector('#new-form');
 
     const username = localStorage.getItem('username') || '';
     
@@ -36,7 +36,7 @@ function ShowTodos(){
 
     todos.forEach(todo => {
         const todoItem = document.createElement('div')
-        todoItem.classList.add('todo-item')
+        todoItem.classList.add('todo-item');
 
         const label = document.createElement('label');
 		const input = document.createElement('input');
@@ -55,7 +55,21 @@ function ShowTodos(){
 		actions.classList.add('actions');
 		editButton.classList.add('edit');
 		deleteButton.classList.add('delete');
+        
+        content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
+		editButton.innerHTML = 'Edit';
+		deleteButton.innerHTML = 'Delete';
+        
+        label.appendChild(input);
+		label.appendChild(span);
+		actions.appendChild(editButton);
+		actions.appendChild(deleteButton);
+        todoItem.appendChild(label);
+		todoItem.appendChild(content);
+		todoItem.appendChild(actions);
 
+		newTodos.appendChild(todoItem);
 
+        
     });
 }
