@@ -120,10 +120,10 @@ const usernameForm = document.getElementById("username-form")
 
 usernameForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    startGame();
+    startTodo();
 })
 
-function startGame(){
+function startTodo(){
 
    // if(username.value.trim() !=""){
     if(validation(username.value)){

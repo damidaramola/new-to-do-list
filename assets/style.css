@@ -1,7 +1,7 @@
 /* Variables */
 :root {
 	--primary: #600076;
-	--light: #f7e4f5;
+	--light: #f7d7f4;
 	--grey: #888;
 	--dark: #0b0b0b;
 	--danger: #e93e3b;
@@ -200,4 +200,47 @@ input:checked ~ .radio-button::after {
 
 .container{
 	display: none;
+}
+
+.home-container{
+	width: 500px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(234, 174, 236);
+    text-align: center;
+	border-radius: 25px;
+}
+.home-container input[type="text"]{
+	background: white;
+    display: block;
+    margin: 1.25rem auto;
+    text-align: center;
+    border: 0.2rem solid var(--primary);
+    padding: 1.25rem 1rem;
+    width: 300px;
+    border-radius: 25px;
+}
+
+.home-container input[type="submit"]{
+	background: var(--primary);
+	color: white;
+    display: block;
+    margin: 1.25rem auto;
+    text-align: center;
+    border: 0.2rem solid var(--primary);
+    padding: 1rem 1rem;
+    width: 300px;
+    border-radius: 25px;
+}
+
+.home-container h1{
+	text-align: center;
+	color: white;
+    font-family: 'fira sans', sans-serif;
+    background: var(--primary);
+    border-radius: 30px;
+    padding: 15px;
 }
