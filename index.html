@@ -11,54 +11,47 @@
   <body>
     <main class="container main-page">
       <section class="intro">
+        <!-- user can add their name to the page -->
         <h2 class="title">
-          Hello, <p id="username-display"></p>
+          Hello,
+          <p id="username-display"></p>
         </h2>
       </section>
       <section class="new-todo">
-        <h3> Todo List</h3>
+        <h3>Todo List</h3>
+        <!-- to do list form -->
         <form method="GET" id="new-form">
-            <h4>
-                What is on your list today?
-            </h4>
-            <input type="text" name="content" id="list-content" placeholder="e.g. get ingredients">
-            <input type="submit" value ="add todo">
+          <h4>What is on your list today?</h4>
+          <input
+            type="text"
+            name="content"
+            id="list-content"
+            placeholder="e.g. get ingredients"
+          />
+          <input type="submit" value="add todo" />
         </form>
       </section>
       <section class="todo-list">
-       <h3>My TODO List</h3>
-       <div class="my-list" id="list">
-        <!-- delete -->
-        <!-- <div class="todo-item done">
-            <label>
-                <input type="checkbox">
-                <span class="radio-button">
-                </span>
-            </label>
-            <div class="list-content">
-                <input type="text" value="e.g. make a cake " readonly>
-            </div>
-            <div class="actions">
-                <button class="edit">Edit</button>
-                <button class="delete">Delete</button>
-
-            </div>
-        </div> -->
-        <!-- keep -->
-       </div>
-       <button id="go-back" class="back-home">Go back</button>
+        <h3>My TODO List</h3>
+        <div class="my-list" id="list"></div>
+        <!-- takes you back to insert username page -->
+        <button id="go-back" class="back-home">Go back</button>
       </section>
     </main>
+    <!-- landing page before you enter todo list page -->
     <div class="home-container">
-
-       <form method="GET" id="username-form">
-        <h1>
-          Welcome your TODO List!
-      </h1>
-        <input type="text" name="username" id="username" placeholder="Enter your username">
-        <input type="submit" value="Start">
-       </form>
-      </div>
+      <!-- form for username -->
+      <form method="GET" id="username-form">
+        <h1>Welcome your TODO List!</h1>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter your username"
+        />
+        <input type="submit" value="Start" />
+      </form>
+    </div>
     <script src="/assets/main.js"></script>
   </body>
 </html>

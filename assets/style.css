@@ -23,7 +23,7 @@
 	background: none;
 	cursor: initial;
 }
-
+/* styling for list page */
 main{
 	min-height:100vh;
 	display: flex;
@@ -79,7 +79,7 @@ h4 {
 	font-size: 1.5rem;
 	font-weight: 700;
 }
-
+/* text fields to input list items */
 .new-todo input[type=text]{
     display: block;
 	width: 100%;
@@ -132,7 +132,7 @@ input:checked ~ .radio-button::after {
 	height: 10px;
 	opacity: 1;
 }
-
+/* submit todo item */
 .new-todo  input[type="submit"] {
 	display: block;
 	width: 100%;
@@ -180,7 +180,7 @@ input:checked ~ .radio-button::after {
     color: var(--dark);
 	font-size: 1.125rem;
 }
-
+ /* edit and delete buttons */
 .todo-item .actions{
  display: flex;
  align-items: center;
@@ -261,13 +261,7 @@ input:checked ~ .radio-button::after {
     padding: 15px;
 }
 
-@media (max-width:1999.98px){
-
-}
-
-@media (max-width:992px){
-
-}
+/* media queries */
 
 @media (max-width:768px){
 	.home-container h1{
