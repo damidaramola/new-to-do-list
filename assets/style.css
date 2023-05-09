@@ -244,3 +244,34 @@ input:checked ~ .radio-button::after {
     border-radius: 30px;
     padding: 15px;
 }
+
+@media (max-width:1999.98px){
+
+}
+
+@media (max-width:992px){
+
+}
+
+@media (max-width:768px){
+	.home-container h1{
+		text-align: center;
+		font-size: 1.25rem;
+		padding: 10px;
+		
+	}
+	.home-container input[type="submit"]{
+		width: 200px;
+	}
+    .home-container input[type="text"]{
+		width: 200px;
+	}
+	.home-container{
+		width: 300px;
+	}
+}
+
+
+@media (max-width:576px){
+	
+}
