@@ -135,7 +135,7 @@ Steps to deploy:
 * The code that inspired this todolist was observed from [Blog](https://javascript.plainenglish.io/how-to-create-a-todo-list-using-javascript-5e126a93483),
 * learning how to use local stoarge was inspired by [stackoverflow post ](https://javascript.plainenglish.io/how-to-create-a-todo-list-using-javascript-5e126a93483)
 
-##Acknowledgements
+## Acknowledgements
 * Big thank you to my mentor Jubril for his amazing guidance and support
                                                
 
