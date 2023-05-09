@@ -278,6 +278,7 @@ input:checked ~ .radio-button::after {
 	}
 	.home-container{
 		width: 300px;
+		
 	}
 }
 
