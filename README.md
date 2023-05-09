@@ -1,14 +1,14 @@
 # TODO App
 
-This simple TODO app allows the user to plan out their tasks for the day. It is feasable and easy to use for people such as students, teachers and those who really enjoy organised productivity.
+This simple TODO app allows the user to plan out their tasks for the day. It is feasible and easy to use for people such as students, teachers and those who really enjoy organised productivity.
 
 ![todo list main screenshot](https://github.com/damidaramola/Memory-Card-Game/assets/110638513/23187a76-7d2f-4c70-8ec5-8d750f38a955)
 
 ## User Stories 
-* As a user I can input my username on the landing so that I see my name on the todo list page
+* As a user I can input my username on the landing page so that I see my name on the todo list page
 * As a user I can input my tasks on the todo list page so that I see my tasks for the day
 * As a user I can edit each task so that I can change my mind when I desire
-* As a user I can delete a task so that I can clear my to do list and start from scratch
+* As a user I can delete tasks so that I can clear my to-do list and start from scratch
 * As a user I can check off my tasks so that I see when each one is completed
 
 ##  Design
@@ -16,7 +16,7 @@ This simple TODO app allows the user to plan out their tasks for the day. It is 
 * The design is very simple with a solid light pink background and contrasting purple buttons which the user can clearly see. The delete buttons are red to signify that the task inserted will be removed.
 
 ### Typography
-* The fira sans font was used throughout the project and sans serif was used as the fallback font. This is used incase the fira sans font doesn't load to the site properly.
+* The Fira sans font was used throughout the project and sans serif was used as the fallback font. This is used in case the fira sans font doesn't load to the site properly.
 
 ## Features
 
@@ -51,7 +51,7 @@ This simple TODO app allows the user to plan out their tasks for the day. It is 
 ![delete task](https://github.com/damidaramola/Memory-Card-Game/assets/110638513/13159277-5628-4e93-8560-fdd1f8137959)
 
 ## Crossing out tasks
-* When the user has completed their tasks, the can click the radio button and it will cross out the task with a strikethrough line
+* When the user has completed their tasks, they can click the radio button and it will cross out the task with a strikethrough line
  
  ![check list](https://github.com/damidaramola/Memory-Card-Game/assets/110638513/5a3d5b61-d05a-464b-984f-c53e42036666)
 
@@ -69,9 +69,10 @@ This simple TODO app allows the user to plan out their tasks for the day. It is 
 
 ## Frameworks, Libraries & Programs Used
 
-* GitHub was used to store the my code after being pushed from Git.
-* [Sweet alert](https://sweetalert.js.org/guides/) was use to replace default alerts used during validation
+* GitHub was used to store my code after being pushed from Git.
+* [Sweet alert](https://sweetalert.js.org/guides/) was used to replace default alerts used during validation
 * Visual Studio Code was the IDE I used for this project
+
 
 ## Testing
  
@@ -98,12 +99,13 @@ This simple TODO app allows the user to plan out their tasks for the day. It is 
 * Ensured landing page loaded correctly
 * Ensured all links were working correctly
 * Ensured username validation was working when blank spaces are entered
-* Ensured task validation was working when user inserts blank spaces where they can add new to do
-* Ensured edit button was functioning
-* Ensured delete button was working
-* Ensured responiveness through [Am I responsive website](https://ui.dev/amiresponsive?url=https://damidaramola.github.io/new-to-do-list/) 
-* Ensured 'go back' button went back to landing page 
+* Ensured task validation was working when the user inserts blank spaces where they can add new to do
+* Ensured the edit button was functioning
+* Ensured the delete button was working
+* Ensured responsiveness through [Am I responsive website](https://ui.dev/amiresponsive?url=https://damidaramola.github.io/new-to-do-list/) 
+* Ensured the 'go back' button went back to the landing page 
 * Ensured javascript links were working after initial deployment to Github pages
+
 
 
 ## Deployment
@@ -117,7 +119,7 @@ Steps to deploy:
 5. Refresh the page if the link is not instantly generated.
 6. The page should now provide the link to the completed website.
 
-## How to clone to repository
+## How to clone a repository
 1. Log in to GitHub and locate the GitHub Repository
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
