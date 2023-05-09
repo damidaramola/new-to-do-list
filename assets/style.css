@@ -24,6 +24,21 @@
 	cursor: initial;
 }
 
+main{
+	min-height:100vh;
+	display: flex;
+	justify-content: center;
+	padding: 1rem 1rem;
+}
+.main-page{
+	width:100%;
+	max-width: 768px;
+	margin:auto;
+}
+.container{
+	display: none;
+   }
+
 body {
 	background: var(--light);
 	color: var(--dark);
@@ -196,11 +211,12 @@ input:checked ~ .radio-button::after {
 	text-decoration: line-through;
 	color: var(--grey);
 }
-
-
-.container{
-	display: none;
+#username-display{
+	display: inline-flex;
 }
+
+/* landing page to add username */
+
 
 .home-container{
 	width: 500px;
@@ -271,7 +287,28 @@ input:checked ~ .radio-button::after {
 	}
 }
 
+@media (max-width:600px){
+	.todo-list .todo-item {
+		display: block;
+		align-items: center;
+		background-color: #FFF;
+		padding: 0.65rem;
+		border-radius: 0.5rem;
+		box-shadow: var(--shadow);
+		margin-bottom: 1rem;
+	}
 
-@media (max-width:576px){
-	
+}
+/* go back to landing page */
+
+.back-home{
+	background: var(--primary);
+	color: white;
+    display: block;
+    margin: 1.25rem auto;
+    text-align: center;
+    border: 0.2rem solid var(--primary);
+    padding: 1rem 1rem;
+    width: 300px;
+    border-radius: 25px;
 }

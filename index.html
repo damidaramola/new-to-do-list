@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
-    <main class="container">
+    <main class="container main-page">
       <section class="intro">
         <h2 class="title">
           Hello, <p id="username-display"></p>
@@ -21,7 +21,7 @@
             <h4>
                 What is on your list today?
             </h4>
-            <input type="text" name="content" id="list-content" placeholder="e.g. make a video">
+            <input type="text" name="content" id="list-content" placeholder="e.g. get ingredients">
             <input type="submit" value ="add todo">
         </form>
       </section>
@@ -46,10 +46,10 @@
         </div> -->
         <!-- keep -->
        </div>
-       <button id="go-back">Go back</button>
+       <button id="go-back" class="back-home">Go back</button>
       </section>
     </main>
-    <main class="home-container">
+    <div class="home-container">
 
        <form method="GET" id="username-form">
         <h1>
@@ -58,7 +58,7 @@
         <input type="text" name="username" id="username" placeholder="Enter your username">
         <input type="submit" value="Start">
        </form>
-    </main>
+      </div>
     <script src="/assets/main.js"></script>
   </body>
 </html>
